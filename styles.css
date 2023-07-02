@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 60%;
   margin: auto;
   text-align: center;
 }
@@ -49,5 +49,5 @@ h2 {
   color: gold;
   font-size: 40px;
   margin-top: 5px;
-  margin-bottom:5px;
+  margin-bottom:0;
 }
