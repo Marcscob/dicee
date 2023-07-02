@@ -1,5 +1,5 @@
 .container {
-  width: 60%;
+  width: 70%;
   margin: auto;
   text-align: center;
 }
@@ -16,7 +16,6 @@ body {
 
 h1 {
   margin: 30px;
-  margin-bottom: 5px;
   font-family: 'Lobster', cursive;
   /* text-shadow: 5px 0 #ffffff; */
   font-size: 5rem;
@@ -45,9 +44,7 @@ footer {
 
 }
 
-h2 {
+/* h2 {
   color: gold;
   font-size: 40px;
-  margin-top: 5px;
-  margin-bottom:0;
-}
+} */

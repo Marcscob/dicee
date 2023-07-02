@@ -1,41 +1,27 @@
+var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+var diceRandImg = 'dice' + randomNumber1 + '.png';
+var randImgSrc = 'images/' + diceRandImg;
+var img1 = document.querySelectorAll('img')[0];
+img1.setAttribute('src', randImgSrc);
 
+var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+var diceRandImg2 = 'dice' + randomNumber2 + '.png';
+var randImgSrc2 = 'images/' + diceRandImg2;
+var img2 = document.querySelectorAll('img')[1];
+img2.setAttribute('src', randImgSrc2)
 
-var img1 = document.querySelector('.img1');
-var img2 = document.querySelector('.img2');
-var h2text = document.querySelector('h2');
+var h1text = document.querySelector("h1");
 
-function dice() {
+if (randomNumber1 > randomNumber2) {
+    h1text.textContent = 'O jogador 1 é o vencedor!'
+} else if (randomNumber1 < randomNumber2) {
+  h1text.textContent = "O jogador 2 é o vencedor! ";
+} else if (randomNumber1 == randomNumber2) {
+    h1text.textContent = "Empate!!";
+}
 
-    let randomNumber1 =  Math.floor((Math.random() * 6) + 1);
-    let randomNumber2 =  Math.floor((Math.random() * 6) + 1);   
+function reloadPage() {
+    location.reload();
+}
 
-if(randomNumber1 == 1 , randomNumber2 == 6){
-     img1.src = './images/dice1.png';  
-     img2.src = './images/dice6.png';
-}else if (randomNumber1 == 2 , randomNumber2 == 5) {
-    img1.src = './images/dice2.png'; 
-    img2.src = './images/dice5.png'; 
-}else if (randomNumber1 == 3 , randomNumber2 == 4) {
-    img1.src = './images/dice3.png'; 
-    img2.src = './images/dice4.png'; 
-}else if (randomNumber1 == 4 , randomNumber2 == 3) {
-    img1.src = './images/dice4.png'; 
-    img2.src = './images/dice3.png'; 
-}else if (randomNumber1 == 5 , randomNumber2 == 2) {
-    img1.src = './images/dice5.png'; 
-    img2.src = './images/dice2.png'; 
-}else if (randomNumber1 == 6 , randomNumber2 == 1) {
-    img1.src = './images/dice6.png'; 
-    img2.src = './images/dice1.png'; 
-    }
-    
-// if (randomNumber1 > randomNumber2) {
-//     h2text.textContent = "o jogador 1 ganhou";
-//     h2text.style.color = 'gold';
-// } else {
-//     h2text.textContent = "o jogador 2 ganhou";
-//     h2text.style.color = 'gold';
-// };
-
-};
 
