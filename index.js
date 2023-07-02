@@ -29,13 +29,13 @@ if(randomNumber1 == 1 , randomNumber2 == 6){
     img2.src = './images/dice1.png'; 
     }
     
-if (randomNumber1 > randomNumber2) {
-    h2text.textContent = "o jogador 1 ganhou";
-    h2text.style.color = 'gold';
-} else {
-    h2text.textContent = "o jogador 2 ganhou";
-    h2text.style.color = 'gold';
-};
+// if (randomNumber1 > randomNumber2) {
+//     h2text.textContent = "o jogador 1 ganhou";
+//     h2text.style.color = 'gold';
+// } else {
+//     h2text.textContent = "o jogador 2 ganhou";
+//     h2text.style.color = 'gold';
+// };
 
 };
 
