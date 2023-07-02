@@ -2,7 +2,6 @@
 
 var img1 = document.querySelector('.img1');
 var img2 = document.querySelector('.img2');
-var h2div = document.querySelector('.h2div')
 var h2text = document.querySelector('h2');
 
 function dice() {
@@ -31,10 +30,12 @@ if(randomNumber1 == 1 , randomNumber2 == 6){
     }
     
 if (randomNumber1 > randomNumber2) {
-    h2text.textContent = "o jogador 1 ganhou"
+    h2text.textContent = "o jogador 1 ganhou";
+    h2text.style.color = 'gold';
 } else {
-    h2text.textContent = "o jogador 2 ganhou"
-}
+    h2text.textContent = "o jogador 2 ganhou";
+    h2text.style.color = 'gold';
+};
 
-}
+};
 
